@@ -10,7 +10,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: transparent;
+
 }
 .wrapper,
 .wrapper .img-area{
@@ -148,25 +148,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 
 #backg_video{
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   z-index: -1;
 }
 
-@media (min-aspect-ratio: 16/9){
-  #backg_video{
-    width: 100%;
-    height: auto;
-  }
-}
 
-@media (max-aspect-ratio: 16/9){
-  #backg_video{
-    width: auto;
-    height: 100%;
-  }
-}
 
 .sc_icons{
   width: 25px;
