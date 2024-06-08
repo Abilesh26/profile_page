@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ecf0f3;
+}
+.wrapper,
+.wrapper .img-area{
+  background: rgba(255, 255, 255, 0.09);
+  
+}
+
+.social-icons a {
+  background: transparent;
+  
+}
+.wrapper{
+  background: rgba( 255, 255, 255, 0.09);
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  width: 330px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wrapper .icon{
+  font-size: 17px;
+  color: #31344b;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.7;
+  top: 15px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+.wrapper .icon i{
+  position: relative;
+  z-index: 9;
+}
+.wrapper .icon.arrow{
+  left: 15px;
+  color: white;
+}
+.wrapper .icon.dots{
+  right: 15px;
+  color: white;
+}
+.wrapper .img-area{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-area .inner-area{
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  border-radius: 50%;
+}
+.inner-area img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.wrapper .name{
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+  color: white;
+  margin: 10px 0 5px 0;
+  padding-top: 10px;
+}
+.wrapper .about{
+  color: white;
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.wrapper .social-icons{
+  margin: 25px 0 25px 0;
+}
+
+.social-icons {
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
+}
+.social-icons a{
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin: 10px 10px;
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+.social-icons a i{
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+}
+
+.wrapper .buttons{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.social-icons a i{
+  scale: 1.15;
+}
+
+
+
+#backg_video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  #backg_video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  #backg_video{
+    width: auto;
+    height: 100%;
+  }
+}
+
+.sc_icons{
+  width: 25px;
+  height: 25px;
+}
+
+.sc_icons {
+  transition: transform 0.3s ease; /* Adds smoothness to the scaling */
+}
+
+.sc_icons:hover {
+  transform: scale(1.3); /* Use transform instead of scale for compatibility */
+}
+
+
+
+
+
